@@ -1,0 +1,56 @@
+body {
+    margin: 0;
+}
+
+.font-italic {
+    font-style: italic !important;
+}
+
+.safe{
+    --mdc-theme-primary:#28a745;
+}
+
+.danger{
+    --mdc-theme-primary: #dc3545;
+}
+
+.stock-list-buttons__collapse{
+    display: block;
+}
+.stock-list-buttons__menu{
+    display: none;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1050;
+    display: none;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    outline: 0;
+}
+
+@media (max-width: 600px) {
+    .stock-list-buttons__collapse{
+        display: none;
+    }
+    .stock-list-buttons__menu{
+        display: block;
+    }
+}
+
+.grocy-fab--absolute {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+  }
+  
+  @media(min-width: 1024px) {
+     .grocy-fab--absolute {
+      bottom: 1.5rem;
+      right: 1.5rem;
+    }
+  }
